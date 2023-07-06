@@ -8,7 +8,7 @@ const About = () => {
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
     >
       <h1>about</h1>
-      <button onClick={(e) => push('/')}>go main</button>
+      <button onClick={() => push('/')}>go main</button>
     </div>
   );
 };
