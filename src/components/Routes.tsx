@@ -9,7 +9,7 @@ interface Props {
 const Routes = ({ children }: Props) => {
   const { path } = useContext(RouterContext);
 
-  let component: ReactNode = <div>Not Found</div>;
+  let component: ReactNode = <h1>404 Not Found</h1>;
 
   for (const route of children) {
     if (route.props.path === path) {

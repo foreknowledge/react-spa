@@ -1,16 +1,13 @@
-import { useCallback, useContext } from 'react';
+import { useContext } from 'react';
 import RouterContext from '../context/RouterContext';
 
 const useRouter = () => {
   const { path, changePath } = useContext(RouterContext);
 
-  const push = useCallback(
-    (nextPath: string) => {
-      if (path === nextPath) return;
-      changePath(nextPath);
-    },
-    [path, changePath]
-  );
+  const push = (nextPath: string) => {
+    if (path === nextPath) return;
+    changePath(nextPath);
+  };
 
   return { push };
 };

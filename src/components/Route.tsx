@@ -3,6 +3,6 @@ interface Props {
   component: React.ReactNode;
 }
 
-const Route = ({}: Props) => null;
+const Route = (_: Props) => null;
 
 export default Route;

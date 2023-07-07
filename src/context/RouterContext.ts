@@ -1,11 +1,11 @@
 import { createContext } from 'react';
 
-type ContextType = {
+type Type = {
   path: string;
   changePath: (path: string) => void;
 };
 
-const RouterContext = createContext<ContextType>({
+const RouterContext = createContext<Type>({
   path: '',
   changePath: () => {},
 });
